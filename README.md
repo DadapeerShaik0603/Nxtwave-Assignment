@@ -208,14 +208,3 @@ nxtwave-lesson-generator/
 
 ---
 
-## 🎬 Loom Video Coverage
-
-| Segment | Content |
-|---|---|
-| 0–2 min | Project structure walkthrough + architecture diagram |
-| 2–5 min | LangGraph graph explanation (nodes, edges, conditional routing) |
-| 5–9 min | Live standard run end-to-end |
-| 9–13 min | Demo fail mode: evaluator catching errors, regeneration with feedback |
-| 13–16 min | Second run: memory/self-evolution injecting learned warnings |
-| 16–20 min | Output files walkthrough (lesson_final.md + rejection_log.md) |
-
