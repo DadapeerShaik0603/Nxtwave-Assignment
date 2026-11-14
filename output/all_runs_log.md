@@ -1,0 +1,69 @@
+# 📚 All Runs — Cumulative Log
+
+> Every pipeline run is recorded here. Newest runs appear at the bottom.
+
+---
+
+## 🏃 Run — 2026-11-13 18:58:11
+
+| Field | Value |
+|---|---|
+| **Topic** | Introduction to RAG |
+| **Final Status** | ✅ PASSED |
+| **Retries used** | 0 / 2 |
+| **Versions generated** | 1 |
+| **Archived lesson** | `runs/20261113_185811_lesson.md` |
+| **Archived eval log** | `runs/20261113_185811_rejection.md` |
+
+### 🔍 Evaluation Results (All Versions)
+
+#### Version 1 — ✅ PASSED
+
+> The lesson fully meets all rubric criteria. It is accurate, beginner‑friendly, includes a clear Indian example, covers all essential points, follows a logical flow, defines every term, and is the right length.
+
+| Checkpoint | Status | Reason | Suggestion |
+|---|---|---|---|
+| **Accurate & Grounded** | ✅ PASS | All factual statements about RAG are correct; it does not claim training or fine‑tuning, and the retrieve‑augment‑generate flow is accurately described. | — |
+| **Beginner-Friendly Language** | ✅ PASS | The lesson uses simple, everyday words and defines every technical term immediately; no sentence is overly complex for a 12th‑grade student with limited English. | — |
+| **Teaches by Example** | ✅ PASS | A concrete, relatable example with Riya, a 12th‑grade Indian student, is provided and walks through each RAG step. | — |
+| **Covers Key Points** | ✅ PASS | The lesson gives a clear one‑sentence definition, explains the limitation of plain LLMs (hallucinations/out‑of‑date knowledge), and details the three‑step retrieve‑augment‑generate process. | — |
+| **Coherent Teaching Flow** | ✅ PASS | The structure follows introduction → definition → why it matters → how it works → real‑world example → summary, providing a logical progression. | — |
+| **No Unexplained Jargon** | ✅ PASS | All technical terms (embedding, vector database, language model, retrieval, generation) are defined in plain language at first use. | — |
+| **Appropriate Length** | ✅ PASS | Word count is 627, which falls within the required 400‑1200 range. | — |
+
+### 📄 Final Lesson Content
+
+# Introduction to RAG (Retrieval‑Augmented Generation) for Beginners
+
+Imagine you have a very smart friend who can answer any question, but sometimes that friend forgets details. RAG is a method that helps the friend look up the right facts before answering, so the reply is both smart and correct. This lesson shows what RAG is, why it is useful, how it works step by step, and a real life story you can picture.
+
+## What is RAG?
+
+RAG stands for Retrieval‑Augmented Generation (a technique that mixes two abilities: finding information and writing answers). In simple words, it is a computer system that first searches a collection of texts for relevant pieces (retrieval) and then uses those pieces to create a new answer (generation). Retrieval means looking up the best matching paragraphs, like flipping to the right page in a book. Generation means writing a response, like a student composing a paragraph. The whole idea is to make the answer more accurate and up‑to‑date.
+
+## Why does it matter?
+
+A plain language model (a program that writes text by guessing the next word) can sound very clever, but it only knows what it learned during training. It cannot see new facts that appeared after its training finished. This can cause wrong or outdated answers. RAG solves that problem by letting the model pull fresh information from a trusted source before it writes. Think of it as a student who reads the latest chapter of a textbook before giving a presentation, instead of only relying on memory.
+
+## How does it work?
+
+RAG works in three clear steps:
+1. **Ask a question** – The user types a query, for example, "What are the health benefits of turmeric?".
+2. **Retrieve** – The system turns the query into numbers (called an embedding: a way to turn words into numbers that a computer can compare) and searches a vector database (a special storage system that finds similar things fast) for the most relevant paragraphs. It brings back, say, three short pieces of text that talk about turmeric.
+3. **Augment and Generate** – The retrieved pieces are attached to the original question and given to the language model (the part that writes text). The model reads the question together with the pieces and then writes a new answer that uses the facts it just saw. The result is a reply that is both fluent and fact‑based.
+The whole loop happens in seconds, so the user feels like they are chatting with a knowledgeable assistant.
+
+## Real‑world example: Student using a textbook
+
+Riya is a 12th‑grade student preparing for her history exam. She asks an AI assistant, "Why did the British build railways in India?".
+1. The assistant converts Riya's question into numbers and looks inside a digital copy of her history textbook stored in a vector database.
+2. It finds two short paragraphs: one that explains the economic reason (moving goods) and another that mentions the military reason (moving troops quickly).
+3. The assistant attaches those paragraphs to Riya's question and asks the language model to write a short answer.
+4. The final reply reads: "The British built railways in India mainly to move raw materials like cotton and tea to ports for export, and also to move soldiers fast across the large country." Riya gets a clear, correct answer that uses the exact information from her textbook.
+This example shows how RAG works like a student who first flips to the right pages, reads them, and then writes a summary.
+
+## Summary
+
+RAG (Retrieval‑Augmented Generation) mixes searching for facts with writing answers, making replies more accurate. It matters because plain language models can be outdated or wrong. The three steps are: ask, retrieve relevant text, and generate a response using that text.
+
+---
